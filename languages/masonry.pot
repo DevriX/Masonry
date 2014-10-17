@@ -1,0 +1,381 @@
+# Copyright (C) 2014 Emil Uzelac
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Masonry 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/masonry\n"
+"POT-Creation-Date: 2014-07-22 19:39:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:15
+#@ masonry
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+#@ masonry
+msgid "It looks like nothing was found at this location. Maybe try searching?"
+msgstr ""
+
+#: archive.php:27
+#, php-format
+#@ masonry
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:30
+#, php-format
+#@ masonry
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+#@ masonry
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:33
+#@ masonry
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:36
+#, php-format
+#@ masonry
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:36
+#@ masonry
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:39
+#@ masonry
+msgid "Asides"
+msgstr ""
+
+#: archive.php:42
+#@ masonry
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:45
+#@ masonry
+msgid "Images"
+msgstr ""
+
+#: archive.php:48
+#@ masonry
+msgid "Videos"
+msgstr ""
+
+#: archive.php:51
+#@ masonry
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:54
+#@ masonry
+msgid "Links"
+msgstr ""
+
+#: archive.php:57
+#@ masonry
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:60
+#@ masonry
+msgid "Audios"
+msgstr ""
+
+#: archive.php:63
+#@ masonry
+msgid "Chats"
+msgstr ""
+
+#: archive.php:66
+#@ masonry
+msgid "Archives"
+msgstr ""
+
+#: comments.php:28
+#, php-format
+#@ masonry
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:35
+#: comments.php:53
+#@ masonry
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36
+#: comments.php:54
+#@ masonry
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37
+#: comments.php:55
+#@ masonry
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:65
+#@ masonry
+msgid "Comments are closed."
+msgstr ""
+
+#: content-home.php:26
+#: content-page.php:24
+#: content-search.php:53
+#: content-single.php:67
+#: content.php:55
+#@ masonry
+msgid "Edit"
+msgstr ""
+
+#: content-none.php:13
+#@ masonry
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+#@ masonry
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+#@ masonry
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: content-none.php:28
+#@ masonry
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: content-page.php:18
+#: content-single.php:27
+#: content.php:22
+#@ masonry
+msgid "Pages:"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: content-search.php:30
+#: content-search.php:40
+#: content-single.php:36
+#: content-single.php:39
+#: content.php:32
+#: content.php:42
+#@ masonry
+msgid ", "
+msgstr ""
+
+#: content-search.php:34
+#: content.php:36
+#, php-format
+#@ masonry
+msgid "Posted in %1$s"
+msgstr ""
+
+#: content-search.php:44
+#: content.php:46
+#, php-format
+#@ masonry
+msgid "Tagged %1$s"
+msgstr ""
+
+#: content-search.php:50
+#: content.php:52
+#@ masonry
+msgid "Leave a comment"
+msgstr ""
+
+#: content-search.php:50
+#: content.php:52
+#@ masonry
+msgid "1 Comment"
+msgstr ""
+
+#: content-search.php:50
+#: content.php:52
+#@ masonry
+msgid "% Comments"
+msgstr ""
+
+#: content-single.php:44
+#, php-format
+#@ masonry
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:46
+#, php-format
+#@ masonry
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:52
+#, php-format
+#@ masonry
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:54
+#, php-format
+#@ masonry
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content.php:19
+#@ masonry
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: footer.php:29
+#@ masonry
+msgid "&copy;"
+msgstr ""
+
+#: footer.php:30
+#@ default
+msgid "Pressly Theme by <a href=\"https://theme.bz/\">Theme Design Studio</a>."
+msgstr ""
+
+#: footer.php:31
+#@ default
+msgid "Powered by <a href=\"http://wordpress.org/\">WordPress</a>."
+msgstr ""
+
+#: functions.php:52
+#@ masonry
+msgid "Primary"
+msgstr ""
+
+#: functions.php:53
+#@ masonry
+msgid "Social"
+msgstr ""
+
+#: functions.php:54
+#@ masonry
+msgid "Footer"
+msgstr ""
+
+#: functions.php:89
+#@ masonry
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:23
+#@ masonry
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:50
+#@ masonry
+msgid "Menu"
+msgstr ""
+
+#: inc/extras.php:72
+#, php-format
+#@ masonry
+msgid "Page %s"
+msgstr ""
+
+#: inc/extras.php:112
+#@ masonry
+msgid "Read More"
+msgstr ""
+
+#: inc/template-tags.php:21
+#@ masonry
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:25
+#@ masonry
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: inc/template-tags.php:29
+#@ masonry
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:52
+#@ masonry
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:55
+#, php-format
+#@ masonry
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:56
+#, php-format
+#@ masonry
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:82
+#, php-format
+#@ masonry
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:87
+#, php-format
+#@ masonry
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:113
+#, php-format
+#@ masonry
+msgid "<span class=\"posted-on\">%1$s</span>"
+msgstr ""
+
+#: search.php:16
+#, php-format
+#@ masonry
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:3
+#@ masonry
+msgid "Search …"
+msgstr ""
+
+#: searchform.php:3
+#@ masonry
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+#@ masonry
+msgid "Search"
+msgstr ""

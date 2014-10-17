@@ -1,0 +1,95 @@
+/*
+Theme Name: Masonry
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/* =05. Text-level semantics
+-------------------------------------------------------------- */
+
+blockquote:before{
+    float: right;
+}
+
+/* =09. Tables
+-------------------------------------------------------------- */
+
+td,
+th {
+	text-align: right;
+}
+
+/* =13. Menus
+-------------------------------------------------------------- */
+
+.navigation-button {
+	text-align: right;
+}
+
+.footer-navigation ul {
+    text-align: right;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: right;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: left;
+    text-align: left;
+}
+
+/* =17. WordPress core styles
+-------------------------------------------------------------- */
+
+.alignright {
+    float: left;
+    margin: 0 18px 18px 0; 
+}
+
+.alignleft {
+    float: right;
+    margin: 0 0 18px 18px;
+}
+
+.gallery-item {
+    float: right;
+    margin: 0 0 4px 4px;
+}
+
+.gallery-caption {
+    text-align: right;
+}
+
+/* =18. Widgets
+-------------------------------------------------------------- */
+
+.widget-area {
+    float: right;
+}
+
+/* =19. Content
+-------------------------------------------------------------- */
+
+.home .hentry {
+    float: right;
+}
+
+.content-area {
+    float: left;
+}
