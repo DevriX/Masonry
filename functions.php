@@ -102,11 +102,6 @@ function masonry_scripts() {
 	
     // Typicons style.	
 	wp_enqueue_style( 'masonry-typicons', get_template_directory_uri() . '/css/typicons.css', array(), '2.0.6' );
-	
-	// Child theme style.	
-    if ( is_child_theme() ) {
-		wp_enqueue_style( 'masonry-child-style', get_stylesheet_uri(), array(), '1.0.0' );
-	}
 
 	// Enqueue masonry	
 	wp_enqueue_script( 'masonry');
