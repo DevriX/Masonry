@@ -35,6 +35,9 @@ get_header();
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		
+		<?php masonry_paging_nav(); ?>
+				
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

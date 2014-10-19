@@ -4,7 +4,7 @@ Theme URI: http://devrix.com/themes/masonry/
 Author: devrix
 Author URI: http://devrix.com/
 Description: Elegant, one-column and super simple to set up theme designed by Emil Uzelac. I'll make your site look awesome!
-Version: 1.0
+Version: 1.1.0
 License: GNU General Public License v2 or higher
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: masonry
@@ -670,6 +670,10 @@ h6 {
     font-size: 18px;
 }
 
+.entry-title {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
 /* =07. Forms
 -------------------------------------------------------------- */
  
@@ -1624,6 +1628,10 @@ figure {
     max-width: 100%;
 }
 
+.widget select option {
+	color: #242424;
+}
+
 .widget .search-field {
     border: 2px solid #777;
     margin-bottom: 10px;
@@ -1634,6 +1642,11 @@ figure {
 .widget-title {
     color: #fff;
     font-weight: 700;
+}
+
+/* Calendar Widget */
+#wp-calendar caption {
+    max-width: 72%;
 }
 
 /* =19. Content

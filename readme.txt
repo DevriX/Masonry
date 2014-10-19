@@ -1,11 +1,42 @@
+=== Masonry ===
+Masonry theme by DevriX (http://devrix.com)
+
+== Social Menu ==
+
+To add social icons in your header you need to go to Dashboard => Appearance => Menus and to create new menu.
+From Theme locations select Social and save the menu.
+To add your social profiles select Links and in URL add your Social profile URL.
+E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter.com/yourprofile
+
+= Available Icons =
+* Facebook
+* Twitter
+* Dribbble
+* Google Plus
+* Pinterest 
+* GitHub
+* Tumblr
+* YouTube
+* Flickr
+* Vimeo
+* Instagram
+* LinkedIn
+* Feed - add your feed URL
+
+== Credits ==
+
+* Masonry was designed by Emil Uzelac (https://theme.bz/)
+* Masonry was based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+* /images/default-image.jpg http://www.pexels.com/photo/2855/ released under the CC0.
+* /fonts/ (C) 2014 Stephen Hutchings http://typicons.com/ released under the SIL Open Font License.
+
 == Changelog ==
+
+= 10/19/2014 - (v1.1.0)
+
+* Readme description updates
+* Several style changes/fixes
 
 = 09/20/2014 - (v1.0)
 
 * Initial release
-
-== Credits ==
-
-* Masonry was based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-* /images/default-image.jpg http://www.pexels.com/photo/2855/ released under the CC0.
-* /fonts/ (C) 2014 Stephen Hutchings http://typicons.com/ released under the SIL Open Font License.
