@@ -27,6 +27,7 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 * Masonry was designed by Emil Uzelac (https://theme.bz/)
 * Masonry was based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+* screenshot.png images from https://www.flickr.com/photos/britishlibrary/sets/72157638906393085/
 * /images/default-image.jpg http://www.pexels.com/photo/2855/ released under the CC0.
 * /fonts/ (C) 2014 Stephen Hutchings http://typicons.com/ released under the SIL Open Font License.
 
