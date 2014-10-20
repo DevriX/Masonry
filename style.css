@@ -919,7 +919,8 @@ th {
 }
 
 tbody tr:nth-child(odd) {
-  background: #f2f2f2;
+	background: #f2f2f2;
+	color: #242424;
 }
 
 /* =10. Links
@@ -1645,8 +1646,12 @@ figure {
 }
 
 /* Calendar Widget */
+#wp-calendar tbody {
+	font-size: .7em;
+}
+
 #wp-calendar caption {
-    max-width: 72%;
+    font-size: 2em
 }
 
 /* =19. Content
