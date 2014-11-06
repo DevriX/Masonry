@@ -1718,6 +1718,12 @@ figure {
     clear: both;
 }
 
+.masonry .cat-links,
+.masonry .tag-links,
+.masonry .comments-links {
+    display: none;
+}
+
 .content-area {
     float: right;
     width: 100%;
