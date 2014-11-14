@@ -33,6 +33,12 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 == Changelog ==
 
+= 11/14/2014 - (v1.1.1)
+* Updated theme description
+* Changed footer credit link and anchor text.
+* category, tag and comment links are "hidden" - https://github.com/DevriX/Masonry/commit/cfe82a4e80737ca561655da0edf91bf10712bd5d
+* Fixed few styling issues related with Jetpack Scroll Infinitely
+
 = 10/19/2014 - (v1.1.0)
 
 * Readme description updates

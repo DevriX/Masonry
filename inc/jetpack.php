@@ -12,8 +12,9 @@
  */
 function masonry_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'footer'    => 'page',
+	    'type'           => 'scroll',
+	    'container'      => 'content',
+	    'footer'		=> 'page'
 	) );
 	
 	/**
