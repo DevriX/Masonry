@@ -8,7 +8,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+		// it should be homepage and checkbox should be checked
+		if ( is_front_page() ) {
+			$hide_homepage_title = get_theme_mod( 'hide_homepage_title' );
+			
+			if ( empty ( $hide_homepage_title ) ) {
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			}
+		} else {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		}
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

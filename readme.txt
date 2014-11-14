@@ -33,6 +33,9 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 == Changelog ==
 
+= 11/14/2014(v.1.2.0)
+* Added option to hide homepage title if you have static front page
+
 = 10/19/2014 - (v1.1.0)
 
 * Readme description updates
