@@ -1,5 +1,8 @@
 === Masonry ===
 Masonry theme by DevriX (http://devrix.com)
+License: GNU General Public License v2 or higher
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gray, white, light, dark, left-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, responsive-layout
 
 == Social Menu ==
 
@@ -32,6 +35,11 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 * /fonts/ (C) 2014 Stephen Hutchings http://typicons.com/ released under the SIL Open Font License.
 
 == Changelog ==
+
+= 08/28/2015 - (v1.2)
+* Added an option to hide title from static front page.
+* Added an option to to display excerpt on article hover.
+* Added an option to to display last modified date.
 
 = 11/14/2014 - (v1.1.1)
 * Updated theme description

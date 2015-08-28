@@ -3,7 +3,7 @@
  * @package Masonry
  */
 ?>
-
+<?php $masonry_options = get_option( 'masonry_theme_options' ); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if ( has_post_thumbnail() ) : ?>
@@ -16,7 +16,13 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php masonry_posted_on(); ?>
+			<?php
+			if( ! empty( $masonry_options['last_updated_on'] ) ){
+				masonry_last_updated_on();
+			} else{
+				masonry_posted_on();
+			}
+			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

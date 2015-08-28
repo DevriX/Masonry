@@ -5,10 +5,15 @@
  * @package Masonry
  */
 ?>
-
+<?php $masonry_options = get_option( 'masonry_theme_options' ); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+		/* show title ( default -> hide homepage title checkbox is unchecked ) */
+		if ( ( is_home() || is_front_page() ) && empty( $masonry_options['hide_homepage_title'] ) ) {
+			the_title( '<h1 class="entry-title">', '</h1>' ); 
+		}
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
