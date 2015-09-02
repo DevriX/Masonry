@@ -71,23 +71,6 @@ function masonry_customizer_options( $wp_customize ) {
 	);
 	
 	$wp_customize->add_setting(
-	    'masonry_theme_options[display_excerpt]',
-	    array(
-		'sanitize_callback' => 'wp_filter_post_kses',
-            	'type' => 'option'
-            )
-	);
-	
-	$wp_customize->add_control(
-	    'masonry_theme_options[display_excerpt]',
-	    array(
-	        'label' => __( 'Display excerpt on home page thumbnail hover?', 'masonry' ),
-	        'section' => 'masonry_options',
-	        'type' => 'checkbox',
-	    )
-	);
-	
-	$wp_customize->add_setting(
 	    'masonry_theme_options[last_updated_on]',
 	    array(
 		'sanitize_callback' => 'wp_filter_post_kses',
