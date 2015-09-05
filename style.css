@@ -567,23 +567,13 @@ blockquote,
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 .site-header,
 .site-content,
 .site-description {
     padding-bottom: 35px;
-}
-
-.single .sidr,
-.single .page-links,
-.single .site-header,
-.single .site-content,
-.single .entry-footer,
-.single .comments-title,
-.single .comment-reply-title {
-    padding-top: 35px;
 }
 
 .content-area,
@@ -1665,7 +1655,7 @@ figure {
 .site-content {
     background-color: #fff;
     padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .masonry .content-area,
