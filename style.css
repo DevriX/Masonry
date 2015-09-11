@@ -665,6 +665,11 @@ h6 {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
+
+.hidden {
+	display:none;
+}
+
 /* =07. Forms
 -------------------------------------------------------------- */
  

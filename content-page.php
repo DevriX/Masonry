@@ -9,10 +9,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
+		$class = 'entry-title';
+		
 		/* show title ( default -> hide homepage title checkbox is unchecked ) */
-		if ( ( is_home() || is_front_page() ) && empty( $masonry_options['hide_homepage_title'] ) ) {
-			the_title( '<h1 class="entry-title">', '</h1>' ); 
+		if( ( is_home() || is_front_page() ) && ! empty( $masonry_options['hide_homepage_title'] ) ) {
+			$class .= ' hidden';
 		}
+		
+		the_title( '<h1 class="'.$class.'">', '</h1>' ); 
 		?>
 	</header><!-- .entry-header -->
 
