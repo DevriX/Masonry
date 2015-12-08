@@ -36,6 +36,12 @@ function masonry_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	/**
+	 * This feature allows themes to add document title tag to HTML <head>.
+	 * @see https://codex.wordpress.org/Title_Tag
+	 */
+	add_theme_support( 'title-tag' );
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *

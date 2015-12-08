@@ -33,17 +33,20 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 == Changelog ==
 
-= 11/14/2014 - (v1.1.1)
+= 08.12.2015 - (v1.1.2)
+* Remove <title> tag from header.php and add add_theme_support( 'title-tag' ); to the functions.php
+
+= 14.11.2014 - (v1.1.1)
 * Updated theme description
 * Changed footer credit link and anchor text.
 * category, tag and comment links are "hidden" - https://github.com/DevriX/Masonry/commit/cfe82a4e80737ca561655da0edf91bf10712bd5d
 * Fixed few styling issues related with Jetpack Scroll Infinitely
 
-= 10/19/2014 - (v1.1.0)
+= 19.10.2014 - (v1.1.0)
 
 * Readme description updates
 * Several style changes/fixes
 
-= 09/20/2014 - (v1.0)
+= 20.09.2014 - (v1.0)
 
 * Initial release
