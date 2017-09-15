@@ -46,7 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     23. Footer
     24. Responsive design
     25. Print styles
-*/
+    */
 
 
 /* =01. normalize.css v3.0.1
@@ -58,7 +58,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    user zoom.
  */
 
-html {
+ html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -68,7 +68,7 @@ html {
  * Remove default margin.
  */
 
-body {
+ body {
     margin: 0;
 }
 
@@ -82,18 +82,18 @@ body {
  * Correct `block` display not defined for `main` in IE 11.
  */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
     display: block;
 }
 
@@ -102,10 +102,10 @@ summary {
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 
-audio,
-canvas,
-progress,
-video {
+ audio,
+ canvas,
+ progress,
+ video {
     display: inline-block; /* 1 */
     vertical-align: baseline; /* 2 */
 }
@@ -115,7 +115,7 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls]) {
+ audio:not([controls]) {
     display: none;
     height: 0;
 }
@@ -125,8 +125,8 @@ audio:not([controls]) {
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
-[hidden],
-template {
+ [hidden],
+ template {
     display: none;
 }
 
@@ -137,7 +137,7 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 
-a {
+ a {
     background: transparent;
 }
 
@@ -145,12 +145,12 @@ a {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
-a:active,
-a:hover {
+ a:active,
+ a:hover {
     outline: 0;
 }
 
-   
+
 /* =Text-level semantics
 -------------------------------------------------------------- */
 
@@ -158,7 +158,7 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
-abbr[title] {
+ abbr[title] {
     border-bottom: 1px dotted;
 }
 
@@ -166,8 +166,8 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 
-b,
-strong {
+ b,
+ strong {
     font-weight: bold;
 }
 
@@ -175,7 +175,7 @@ strong {
  * Address styling not present in Safari and Chrome.
  */
 
-dfn {
+ dfn {
     font-style: italic;
 }
 
@@ -184,7 +184,7 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
+ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -193,7 +193,7 @@ h1 {
  * Address styling not present in IE 8/9.
  */
 
-mark {
+ mark {
     background: #ff0;
     color: #000;
 }
@@ -202,7 +202,7 @@ mark {
  * Address inconsistent and variable font size in all browsers.
  */
 
-small {
+ small {
     font-size: 80%;
 }
 
@@ -210,8 +210,8 @@ small {
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-sub,
-sup {
+ sub,
+ sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -233,7 +233,7 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
+ img {
     border: 0;
 }
 
@@ -241,7 +241,7 @@ img {
  * Correct overflow not hidden in IE 9/10/11.
  */
 
-svg:not(:root) {
+ svg:not(:root) {
     overflow: hidden;
 }
 
@@ -252,7 +252,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 
-figure {
+ figure {
     margin: 1em 40px;
 }
 
@@ -260,7 +260,7 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 
-hr {
+ hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
@@ -270,7 +270,7 @@ hr {
  * Contain overflow in all browsers.
  */
 
-pre {
+ pre {
     overflow: auto;
 }
 
@@ -278,10 +278,10 @@ pre {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
-code,
-kbd,
-pre,
-samp {
+ code,
+ kbd,
+ pre,
+ samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
@@ -301,11 +301,11 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
     color: inherit; /* 1 */
     font: inherit; /* 2 */
     margin: 0; /* 3 */
@@ -315,7 +315,7 @@ textarea {
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
-button {
+ button {
     overflow: visible;
 }
 
@@ -326,8 +326,8 @@ button {
  * Correct `select` style inheritance in Firefox.
  */
 
-button,
-select {
+ button,
+ select {
     text-transform: none;
 }
 
@@ -339,10 +339,10 @@ select {
  *    `input` and others.
  */
 
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
+ button,
+ html input[type="button"], /* 1 */
+ input[type="reset"],
+ input[type="submit"] {
     -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
 }
@@ -351,8 +351,8 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
-button[disabled],
-html input[disabled] {
+ button[disabled],
+ html input[disabled] {
     cursor: default;
 }
 
@@ -360,8 +360,8 @@ html input[disabled] {
  * Remove inner padding and border in Firefox 4+.
  */
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
@@ -371,7 +371,7 @@ input::-moz-focus-inner {
  * the UA stylesheet.
  */
 
-input {
+ input {
     line-height: normal;
 }
 
@@ -383,8 +383,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-input[type="checkbox"],
-input[type="radio"] {
+ input[type="checkbox"],
+ input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
 }
@@ -395,8 +395,8 @@ input[type="radio"] {
  * decrement button to change from `default` to `text`.
  */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -406,7 +406,7 @@ input[type="number"]::-webkit-outer-spin-button {
  *    (include `-moz` to future-proof).
  */
 
-input[type="search"] {
+ input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box; /* 2 */
@@ -417,7 +417,7 @@ input[type="search"] {
  * Define consistent border, margin, and padding.
  */
 
-fieldset {
+ fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
@@ -428,7 +428,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
-legend {
+ legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
 }
@@ -437,7 +437,7 @@ legend {
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-textarea {
+ textarea {
   overflow: auto;
 }
 
@@ -446,7 +446,7 @@ textarea {
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
-optgroup {
+ optgroup {
     font-weight: bold;
 }
 
@@ -454,7 +454,7 @@ optgroup {
  * Remove most spacing between table cells.
  */
 
-table {
+ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -517,43 +517,43 @@ body {
 
 /* =04. Global margins & paddings
     TODO (the entire stylesheet)
--------------------------------------------------------------- */
+    -------------------------------------------------------------- */
 
-p {
-	padding: 0;
-}
+    p {
+     padding: 0;
+ }
 
 
-ul,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-table,
-.gallery,
-blockquote,
-.wp-caption,
-.entry-meta,
-.comment-body,
-.footer-menu,
-.page-links,
-.site-main p,
-.page-content,
-.entry-content,
-.site-credits,
-.entry-summary,
-.entry-thumbnail,
-.comments-title,
-.comment-meta,
-.wp-caption-text,
-.comment-reply-title,
-.site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation {
+ ul,
+ ol,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ pre,
+ table,
+ .gallery,
+ blockquote,
+ .wp-caption,
+ .entry-meta,
+ .comment-body,
+ .footer-menu,
+ .page-links,
+ .site-main p,
+ .page-content,
+ .entry-content,
+ .site-credits,
+ .entry-summary,
+ .entry-thumbnail,
+ .comments-title,
+ .comment-meta,
+ .wp-caption-text,
+ .comment-reply-title,
+ .site-main .comment-navigation,
+ .site-main .paging-navigation,
+ .site-main .post-navigation {
     margin-bottom: 35px;
 }
 
@@ -677,7 +677,7 @@ h6 {
 }
 /* =07. Forms
 -------------------------------------------------------------- */
- 
+
 select,
 textarea,
 input:not([type]),
@@ -747,20 +747,20 @@ input[type="color"]:disabled {
  * Reset style on iOS.
  */
 
-textarea,
-input:not([type]),
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"] {
+ textarea,
+ input:not([type]),
+ input[type="text"],
+ input[type="password"],
+ input[type="email"],
+ input[type="url"],
+ input[type="search"],
+ input[type="tel"] {
     -webkit-appearance: none;
 }
 
 
 /* Reset height
- * Must be after size modifiers */
+* Must be after size modifiers */
 textarea,
 select[multiple],
 select[size] {
@@ -779,7 +779,7 @@ textarea {
  * Placeholder
  * Higher specificity (!important) needed to override color in IE
  */
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
    color: #9e9e9e !important;
 }
 
@@ -806,7 +806,7 @@ textarea {
 /*
  * Removes box-shadow for invalid controls in Firefox.
  */
-:invalid {
+ :invalid {
    box-shadow: none;
 }
 
@@ -839,16 +839,16 @@ input[type="button"] {
  * 3. Required for 'a' elements
  */
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="button"]:hover,
-input[type="button"]:focus {
+ button:hover,
+ button:focus,
+ .button:hover,
+ .button:focus,
+ input[type="reset"]:hover,
+ input[type="reset"]:focus,
+ input[type="submit"]:hover,
+ input[type="submit"]:focus,
+ input[type="button"]:hover,
+ input[type="button"]:focus {
     background-color: #16cfcd;
 }
 
@@ -876,9 +876,9 @@ input[type="button"]:disabled {
  * Vertical alignment
  * Exclude 'radio' and 'checkbox' elements because the default 'baseline' value aligns better with text
  */
-button,
-input:not([type="radio"]):not([type="checkbox"]),
-select {
+ button,
+ input:not([type="radio"]):not([type="checkbox"]),
+ select {
     vertical-align: middle;
 }
 
@@ -911,12 +911,12 @@ table {
 
 td, th {
     padding: 4px 8px;
-	text-align: left;
+    text-align: left;
 }
 
 th {
     font-weight: 400;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 tbody tr:nth-child(odd) {
@@ -942,7 +942,7 @@ a:active {
 /*
  * Selection highlight
  */
-::-moz-selection {
+ ::-moz-selection {
     background: #242424;
     color: #fff;
     text-shadow: none;
@@ -1065,18 +1065,18 @@ a:active {
     -webkit-font-smoothing: antialiased;
     background-color: rgba(0, 0, 0, .6);
     display: block;
-	font-family: "typicons";
-	font-size: 36px;
-	font-style: normal;
+    font-family: "typicons";
+    font-size: 36px;
+    font-style: normal;
     font-smoothing: antialiased;
-	font-weight: normal;
-	line-height: 1;
+    font-weight: normal;
+    line-height: 1;
     padding: 5px 10px 4px 10px;
     position: relative;
     text-align: center;
-	text-decoration: none;
+    text-decoration: none;
     text-rendering: optimizeLegibility;
-	vertical-align: text-bottom;
+    vertical-align: text-bottom;
 }
 
 .icon:before {
@@ -1094,16 +1094,16 @@ a:active {
 .sidr {
     background-color: rgba(0, 0, 0, .6);
     color: #fff;
-	display: none;
+    display: none;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 13px;
-	height: 100%;
-	overflow-x: none;
-	overflow-y: auto;
-	position: fixed;
-	top: 0;
-	width: 250px;
-	z-index: 999999;
+    height: 100%;
+    overflow-x: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 250px;
+    z-index: 999999;
 }
 
 .sidr .sidr-inner {
@@ -1140,15 +1140,15 @@ a:active {
 .sidr ul li ul a:before {
     -webkit-font-smoothing: antialiased;
     display: inline;
-	font-style: normal;
+    font-style: normal;
     font-smoothing: antialiased;
-	font-weight: normal;
-	line-height: 1;
+    font-weight: normal;
+    line-height: 1;
     position: relative;
     text-align: center;
-	text-decoration: none;
+    text-decoration: none;
     text-rendering: optimizeLegibility;
-	vertical-align: text-top;
+    vertical-align: text-top;
 }
 
 .sidr ul li ul a:before {
@@ -1183,17 +1183,17 @@ a:active {
 .social-menu ul a:before {
     -webkit-font-smoothing: antialiased;
     display: block;
-	font-family: "typicons";
-	font-size: 42px;
-	font-style: normal;
+    font-family: "typicons";
+    font-size: 42px;
+    font-style: normal;
     font-smoothing: antialiased;
-	font-weight: normal;
-	line-height: 1;
+    font-weight: normal;
+    line-height: 1;
     position: relative;
     text-align: center;
-	text-decoration: none;
+    text-decoration: none;
     text-rendering: optimizeLegibility;
-	vertical-align: text-bottom;
+    vertical-align: text-bottom;
 }
 
 .social-menu ul li {
@@ -1210,7 +1210,7 @@ a:active {
 
 .social-menu ul a:hover {
     color: #18e4e2;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .social-menu ul:last-of-type {
@@ -1354,10 +1354,10 @@ a:active {
  * Responsive media.
  */
  
-img,
-embed,
-object,
-video {
+ img,
+ embed,
+ object,
+ video {
     height: auto;
     max-width: 100%;
 }
@@ -1366,12 +1366,12 @@ video {
  * Google maps image fix.
  */
 
-img[src*="maps.gstatic.com"],
-img[src*="googleapis.com"] {
-	max-width: none;
-}
+ img[src*="maps.gstatic.com"],
+ img[src*="googleapis.com"] {
+     max-width: none;
+ }
 
-figure {
+ figure {
     margin: 0;
     padding: 0;
 }
@@ -1400,31 +1400,31 @@ figure {
 .masonry .has-post-thumbnail:before {
     -webkit-font-smoothing: antialiased;
     display: block;
-	font-family: "typicons";
-	font-size: 100px;
-	font-style: normal;
+    font-family: "typicons";
+    font-size: 100px;
+    font-style: normal;
     font-smoothing: antialiased;
-	font-weight: normal;
-	line-height: 1;
+    font-weight: normal;
+    line-height: 1;
     position: relative;
     text-align: center;
-	text-decoration: none;
+    text-decoration: none;
     text-rendering: optimizeLegibility;
-	vertical-align: text-bottom;
+    vertical-align: text-bottom;
 }
 
-.masonry .has-post-thumbnail:before {
-    content: '\e08f';
-    display: none;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 33%;
-}
+// .masonry .has-post-thumbnail:before {
+//     content: '\e08f';
+//     display: none;
+//     left: 0;
+//     position: absolute;
+//     right: 0;
+//     top: 33%;
+// }
 
-.masonry .has-post-thumbnail:hover:before {
-    display: block;
-}
+// .masonry .has-post-thumbnail:hover:before {
+//     display: block;
+// }
 
 .masonry .entry-content {
     margin: 0;
@@ -1442,8 +1442,13 @@ figure {
     text-align: center;
 }
 
+.single .entry-thumbnail {
+    margin-top: 0;
+}
+
 .masonry .entry-thumbnail {
     margin: 0;
+    position: relative;
 }
 
 /* =17. WordPress core styles
@@ -1779,15 +1784,15 @@ figure {
 
 .comment-meta {
     border-bottom: 2px solid rgba(0, 0, 0 ,0.1);
-	text-align: center;
+    text-align: center;
 }
 
 .comment-author .avatar {
     border-radius: 100px;
-	display: block;
+    display: block;
     margin-right: auto;
     margin-left: auto;
-	text-align: center;
+    text-align: center;
 }
 
 .masonry .comments-link {
@@ -1824,7 +1829,7 @@ figure {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display 
-   elements that were hidden (via .neverending) before */
+elements that were hidden (via .neverending) before */
 
 .infinity-end.neverending .site-footer {
     display: block;
@@ -1858,9 +1863,9 @@ figure {
 
 /* =24. Responsive design
 -------------------------------------------------------------- */
- 
+
 @media screen and (max-width: 960px) { /* Mobile Devices */
- 
+
     img {
         display: block;
         margin-left: auto;
@@ -1870,36 +1875,36 @@ figure {
     .site-info,
     .site-banner,
     .site-content {
-		padding: 10px;
-	}
-    
-    .site-title {
-        font-size: xx-large;
-    }
-    
-    .widget-area,
-    .content-area {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        float: none;
-        width: 100%;
-    }
-    
-    .comment-list .children {
-		padding-left: 0;
-	}
-    
+      padding: 10px;
+  }
+
+  .site-title {
+    font-size: xx-large;
+}
+
+.widget-area,
+.content-area {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    width: 100%;
+}
+
+.comment-list .children {
+  padding-left: 0;
+}
+
 }
 
 @media screen and (min-width: 960px) { /* Desktop */
-    
+
     .site-info,
     .site-banner,
     .site-content {
-		width: 960px;
-	}
-    
+      width: 960px;
+  }
+
 }
 
 /* =25. Print styles
@@ -1908,7 +1913,7 @@ figure {
 /* Print styles inlined to avoid extra HTTP connection */
 
 @media print {
-    
+
 	* {
 		background: transparent !important;
 		color: black !important; /* Black prints faster: sanbeiji.com/archives/953 */
@@ -1955,5 +1960,17 @@ figure {
 	h2, h3 {
 		page-break-after: avoid;
 	}
-    
+
+}
+
+.masonry .header-hover {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.masonry .has-post-thumbnail:hover .header-hover {
+    display: block;
 }
