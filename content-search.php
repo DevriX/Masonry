@@ -14,7 +14,13 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php masonry_posted_on(); ?>
+			<?php
+			if( ! empty( $masonry_options['last_updated_on'] ) ){
+				masonry_last_updated_on();
+			} else{
+				masonry_posted_on();
+			}
+			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
