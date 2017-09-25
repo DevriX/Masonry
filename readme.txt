@@ -1,12 +1,15 @@
 === Masonry ===
-Masonry theme by DevriX (http://devrix.com)
+Masonry theme by DevriX (https://devrix.com)
+License: GNU General Public License v2 or higher
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gray, white, light, dark, left-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, responsive-layout
 
 == Social Menu ==
 
 To add social icons in your header you need to go to Dashboard => Appearance => Menus and to create new menu.
 From Theme locations select Social and save the menu.
 To add your social profiles select Links and in URL add your Social profile URL.
-E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter.com/yourprofile
+E.g for Facebook - https://facebook.com/yourprofile, for Twitter - https://twitter.com/yourprofile
 
 = Available Icons =
 * Facebook
@@ -33,20 +36,23 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 == Changelog ==
 
-= 08.12.2015 - (v1.1.2)
-* Remove <title> tag from header.php and add add_theme_support( 'title-tag' ); to the functions.php
+= 09/26/2017 - (v1.2)
+* Added an option to hide title from static front page.
+* Added an option to to display excerpt on article hover.
+* Added an option to to display last modified date.
+* Added a few small styling improvements.
 
-= 14.11.2014 - (v1.1.1)
+= 11/14/2014 - (v1.1.1)
 * Updated theme description
 * Changed footer credit link and anchor text.
 * category, tag and comment links are "hidden" - https://github.com/DevriX/Masonry/commit/cfe82a4e80737ca561655da0edf91bf10712bd5d
 * Fixed few styling issues related with Jetpack Scroll Infinitely
 
-= 19.10.2014 - (v1.1.0)
+= 10/19/2014 - (v1.1.0)
 
 * Readme description updates
 * Several style changes/fixes
 
-= 20.09.2014 - (v1.0)
+= 09/20/2014 - (v1.0)
 
 * Initial release

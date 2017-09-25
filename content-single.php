@@ -3,35 +3,41 @@
  * @package Masonry
  */
 ?>
-
+<?php $masonry_options = get_option( 'masonry_theme_options' ); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
+	<?php if ( has_post_thumbnail() ) : ?>
+	<div class="entry-thumbnail">
+        <?php the_post_thumbnail( 'masonry-single' ); ?>
+	</div><!-- .entry-thumbnail -->
+    <?php endif; ?>
+    
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php masonry_posted_on(); ?>
+			<?php
+			if( ! empty( $masonry_options['last_updated_on'] ) ){
+				masonry_last_updated_on();
+			} else{
+				masonry_posted_on();
+			}
+			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="entry-thumbnail">
-			<?php the_post_thumbnail( 'masonry-single' ); ?>
-		</div><!-- .entry-thumbnail -->
-	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'masonry' ),
-			'after'  => '</div>',
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'masonry' ),
+				'after'  => '</div>',
 			) );
-			?>
-		</div><!-- .entry-content -->
+		?>
+	</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php
+	<footer class="entry-footer">
+		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$category_list = get_the_category_list( __( ', ', 'masonry' ) );
 
@@ -61,9 +67,9 @@
 				$category_list,
 				$tag_list,
 				get_permalink()
-				);
-				?>
+			);
+		?>
 
-				<?php edit_post_link( __( 'Edit', 'masonry' ), '<span class="edit-link">', '</span>' ); ?>
-			</footer><!-- .entry-footer -->
+		<?php edit_post_link( __( 'Edit', 'masonry' ), '<span class="edit-link">', '</span>' ); ?>
+	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -36,12 +36,6 @@ function masonry_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	/**
-	 * This feature allows themes to add document title tag to HTML <head>.
-	 * @see https://codex.wordpress.org/Title_Tag
-	 */
-	add_theme_support( 'title-tag' );
-
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -52,6 +46,22 @@ function masonry_setup() {
 	add_image_size( 'masonry-home', '300', '300', true ) /* Home only */;
 	add_image_size( 'masonry-single', '960', '9999', false ) /* Single pages */ ;
 
+	/*
+	 * Change medium image croping to hardcrop
+	 */
+	if(false === get_option("medium_crop")) {
+		add_option("medium_crop", "1");
+	}
+	else {
+		update_option("medium_crop", "1");
+	}
+    
+	
+	/**
+	 * This feature allows themes to add document title tag to HTML <head>.
+	 * @see https://codex.wordpress.org/Title_Tag
+	 */
+	add_theme_support( 'title-tag' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -76,6 +86,7 @@ function masonry_setup() {
 }
 endif; // masonry_setup
 add_action( 'after_setup_theme', 'masonry_setup' );
+
 
 /**
  * Register widget area.
@@ -121,6 +132,15 @@ function masonry_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	$masonry_options = get_option( 'masonry_theme_options' );
+	$excerpt_val = !empty( $masonry_options['display_excerpt'] ) ? $masonry_options['display_excerpt'] : "";
+	$excerpt_array = array(
+						'excerpt' => $excerpt_val
+						);
+	wp_localize_script( 'masonry-helpers', 'display_excerpt_val', $excerpt_array );
+	
+	
 }
 add_action( 'wp_enqueue_scripts', 'masonry_scripts' );
 
