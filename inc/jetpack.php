@@ -11,12 +11,15 @@
  * See: http://jetpack.me/support/infinite-scroll/
  */
 function masonry_jetpack_setup() {
-	add_theme_support( 'infinite-scroll', array(
-	    'type'           => 'scroll',
-	    'container'      => 'content',
-	    'footer'		=> 'page'
-	) );
-	
+	add_theme_support(
+		'infinite-scroll',
+		array(
+			'type'      => 'scroll',
+			'container' => 'content',
+			'footer'    => 'page',
+		)
+	);
+
 	/**
 	 * Add theme support for Responsive Videos.
 	 */

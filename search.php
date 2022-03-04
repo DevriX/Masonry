@@ -13,11 +13,23 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<p class="page-title"><?php printf( __( 'Search Results for: %s', 'masonry' ), '<span>' . get_search_query() . '</span>' ); ?></p>
+				<p class="page-title">
+					<?php
+					printf(
+						// translators: the keyword that the user entered
+						esc_html__( 'Search Results for: %s', 'masonry' ),
+						'<span>' . get_search_query( true ) . '</span>'
+					);
+					?>
+									
+				</p>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			while ( have_posts() ) :
+				the_post();
+				?>
 
 				<?php
 				/**

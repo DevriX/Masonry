@@ -1,33 +1,24 @@
-/* Off-Canvas Menu */
-jQuery( document ).ready(function() {
-    jQuery('.navigation-button').sidr({
-        name: 'sidr-main',
-		side: 'right',
-		renaming: false,
-		displace: false,
-        source: '.main-navigation'
-    });
-});
-
 /* Masonry */
-jQuery('.masonry #main').masonry({
-    "gutter": 20,
-    columnWidth: 300,
-    itemSelector: '.masonry .hentry',
-    isFitWidth: true
-});
 
 (function($) {
-    "use strict"; 
-    $(function() {	  
-		
-		// entry-thumbnail hover effect
-		$('.masonry .has-post-thumbnail img').hover(
-			function() {
-		    	$(this).fadeTo('fast', 0.3);
-			}, function() {
-				$(this).fadeTo('slow', 1);
-		  	}
-		);	
- 	}); 
+	"use strict";
+	$(
+		function() {
+			$( '#simple-menu' ).sidr(
+				{
+					timing: 'ease-in-out',
+					speed: 100,
+					side: 'right',
+					renaming: false,
+					source: '.main-navigation'
+				}
+			);
+
+			$( window ).resize(
+				function () {
+					$.sidr( 'close', 'sidr' );
+				}
+			);
+		}
+	);
 }(jQuery));

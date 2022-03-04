@@ -17,75 +17,79 @@ get_header(); ?>
 			<header class="page-header">
 				<p class="page-title">
 					<?php
-						if ( is_category() ) :
-							single_cat_title();
+					if ( is_category() ) :
+						single_cat_title();
 
 						elseif ( is_tag() ) :
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'masonry' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							// translators: Outputs the post author
+							printf( esc_attr__( 'Author: %s', 'masonry' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'masonry' ), '<span>' . get_the_date() . '</span>' );
-
+							// translators: Outputs the day of publishing
+							printf( esc_attr__( 'Day: %s', 'masonry' ), '<span>' . get_the_date() . '</span>' );
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'masonry' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'masonry' ) ) . '</span>' );
-
+							// translators: Outputs the month of publishing
+							printf( esc_attr__( 'Month: %s', 'masonry' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'masonry' ) ) . '</span>' );
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'masonry' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'masonry' ) ) . '</span>' );
+							// translators: Outputs the year of publishing
+							printf( esc_attr__( 'Year: %s', 'masonry' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'masonry' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'masonry' );
+							esc_html_e( 'Asides', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'masonry');
+							esc_html_e( 'Galleries', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'masonry');
+							esc_html_e( 'Images', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'masonry' );
+							esc_html_e( 'Videos', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'masonry' );
+							esc_html_e( 'Quotes', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'masonry' );
+							esc_html_e( 'Links', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'masonry' );
+							esc_html_e( 'Statuses', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'masonry' );
+							esc_html_e( 'Audios', 'masonry' );
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'masonry' );
+							esc_html_e( 'Chats', 'masonry' );
 
 						else :
-							_e( 'Archives', 'masonry' );
+							esc_html_e( 'Archives', 'masonry' );
 
 						endif;
-					?>
+						?>
 				</p>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
 					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+						printf( esc_html( '<div class="taxonomy-description">%s</div>' ), esc_html( $term_description ) );
 					endif;
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
+			<?php
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
+					/*
+					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'content', get_post_format() );
+
 				?>
 
 			<?php endwhile; ?>
