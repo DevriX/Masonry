@@ -29,19 +29,19 @@ function masonry_body_classes( $classes ) {
 	// #1 Adds a class of no-posts to blogs with no posts.
 	// #1 Adds a class of masonry only when home.php is used.
 	// #3 Adds a class of group-blog to blogs with more than 1 published author.
-    if ( ! have_posts () ) {
-        $classes[] = 'no-posts';
-    }
-	
-    if ( is_home () ) {
-        $classes[] = 'masonry';
-    }
+	if ( ! have_posts() ) {
+		$classes[] = 'no-posts';
+	}
 
-    if ( is_multi_author() ) {
-        $classes[] = 'group-blog';
-    }
+	if ( is_home() ) {
+		$classes[] = 'masonry';
+	}
 
-    return $classes;
+	if ( is_multi_author() ) {
+		$classes[] = 'group-blog';
+	}
+
+	return $classes;
 }
 add_filter( 'body_class', 'masonry_body_classes' );
 
@@ -70,33 +70,13 @@ function masonry_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+		// translators:  page number
 		$title .= " $sep " . sprintf( __( 'Page %s', 'masonry' ), max( $paged, $page ) );
 	}
 
 	return $title;
 }
 add_filter( 'wp_title', 'masonry_wp_title', 10, 2 );
-
-/**
- * Sets the authordata global when viewing an author archive.
- *
- * This provides backwards compatibility with
- * http://core.trac.wordpress.org/changeset/25574
- *
- * It removes the need to call the_post() and rewind_posts() in an author
- * template to print information about the author.
- *
- * @global WP_Query $wp_query WordPress Query object.
- * @return void
- */
-function masonry_setup_author() {
-	global $wp_query;
-
-	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
-		$GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
-	}
-}
-add_action( 'wp', 'masonry_setup_author' );
 
 /**
  * Masonry's excerpt length is set to 10 words.
@@ -110,6 +90,6 @@ add_filter( 'excerpt_length', 'masonry_excerpt_length', 999 );
  * Masonry is using "Read More" and [...] string in the excerpt.
  */
 function masonry_excerpt_more( $more ) {
-	return '<span class="more-dots"><a href="'. get_permalink( get_the_ID() ) . '">[ ... ]</span>' . '</a>';
+	return '<span class="more-dots"><a href="' . get_permalink( get_the_ID() ) . '">[ ... ]</span>' . '</a>';
 }
 add_filter( 'excerpt_more', 'masonry_excerpt_more' );

@@ -19,7 +19,7 @@ body {
 -------------------------------------------------------------- */
 
 blockquote:before{
-    float: right;
+	float: right;
 }
 
 /* =09. Tables
@@ -38,7 +38,7 @@ th {
 }
 
 .footer-navigation ul {
-    text-align: right;
+	text-align: right;
 }
 
 .comment-navigation .nav-previous,
@@ -50,46 +50,46 @@ th {
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-    float: left;
-    text-align: left;
+	float: left;
+	text-align: left;
 }
 
 /* =17. WordPress core styles
 -------------------------------------------------------------- */
 
 .alignright {
-    float: left;
-    margin: 0 18px 18px 0; 
+	float: left;
+	margin: 0 18px 18px 0;
 }
 
 .alignleft {
-    float: right;
-    margin: 0 0 18px 18px;
+	float: right;
+	margin: 0 0 18px 18px;
 }
 
 .gallery-item {
-    float: right;
-    margin: 0 0 4px 4px;
+	float: right;
+	margin: 0 0 4px 4px;
 }
 
 .gallery-caption {
-    text-align: right;
+	text-align: right;
 }
 
 /* =18. Widgets
 -------------------------------------------------------------- */
 
 .widget-area {
-    float: right;
+	float: right;
 }
 
 /* =19. Content
 -------------------------------------------------------------- */
 
 .home .hentry {
-    float: right;
+	float: right;
 }
 
 .content-area {
-    float: left;
+	float: left;
 }

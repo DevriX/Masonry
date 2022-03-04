@@ -1,5 +1,8 @@
 === Masonry ===
 Masonry theme by DevriX (http://devrix.com)
+License: GNU General Public License v2 or higher
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gray, white, light, dark, left-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, responsive-layout
 
 == Social Menu ==
 
@@ -33,20 +36,30 @@ E.g for Facebook - http://facebook.com/yourprofile, for Twitter - http://twitter
 
 == Changelog ==
 
-= 08.12.2015 - (v1.1.2)
-* Remove <title> tag from header.php and add add_theme_support( 'title-tag' ); to the functions.php
+= 10/06/2020 - (v1.3.4)
+* Fixed typo in one of the function names in comments.php file.
 
-= 14.11.2014 - (v1.1.1)
+= 15/10/2019 - (v1.3)
+* Fixed a bug with the search field
+* Fixed a bug with infinite scroll on homepage
+
+
+= 08/28/2015 - (v1.2)
+* Added an option to hide title from static front page.
+* Added an option to to display excerpt on article hover.
+* Added an option to to display last modified date.
+
+= 11/14/2014 - (v1.1.1)
 * Updated theme description
 * Changed footer credit link and anchor text.
 * category, tag and comment links are "hidden" - https://github.com/DevriX/Masonry/commit/cfe82a4e80737ca561655da0edf91bf10712bd5d
 * Fixed few styling issues related with Jetpack Scroll Infinitely
 
-= 19.10.2014 - (v1.1.0)
+= 10/19/2014 - (v1.1.0)
 
 * Readme description updates
 * Several style changes/fixes
 
-= 20.09.2014 - (v1.0)
+= 09/20/2014 - (v1.0)
 
 * Initial release

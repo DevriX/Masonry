@@ -6,6 +6,7 @@
  *
  * @package Masonry
  */
+
 ?><!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -19,52 +20,54 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'masonry' ); ?></a>
-	
-    <header id="masthead" class="site-header" role="banner">
-    
-        <div class="site-banner">
-        
-		    <div class="site-branding">
-            
-			    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-                
-                <?php if ( has_nav_menu( 'social' ) ) : ?>
-                <div class="social-menu">
-		            <?php wp_nav_menu( array(
-				        'theme_location' => 'social',
-				        'depth' => '1',
-				        'link_before'    => '<span class="screen-reader-text">',
-				        'link_after'     => '</span>' )
-				        );
-                     ?>
-                </div><!-- .social-menu -->       
-                <?php endif; ?>
-                
-		    </div>
-        
-            <a href="#sidr-main" class="navigation-button">
-                <span class="icon"><span class="menu-text"><?php _e( 'Menu', 'masonry' ); ?></span><span>
-            </a>
-        
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-			    <?php wp_nav_menu( array( 
-			        'theme_location' => 'primary' ) 
-			        ); 
-			    ?>
-                
-                <?php get_sidebar(); ?>
-		    </nav><!-- #site-navigation -->
-        
-	    </div><!-- .site-banner -->
-    
-    </header><!-- #masthead -->
-    
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'masonry' ); ?></a>
+
 	<?php if ( get_header_image() ) : ?>
-    <div class="header-image-overlay">
-		<div class="site-header-image" style="background-image: url('<?php header_image(); ?>')"></div>
-    </div><!-- .header-image-overlay -->
+		<header id="masthead" class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>')">
+	<?php else : ?>
+		<header id="masthead" class="site-header" role="banner">
 	<?php endif; // End header image check. ?>
+
+		<div class="site-banner">
+
+			<div class="site-branding">
+
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+
+				<?php if ( has_nav_menu( 'social' ) ) : ?>
+				<div class="social-menu">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'social',
+							'depth'          => '1',
+							'link_before'    => '<span class="screen-reader-text">',
+							'link_after'     => '</span>',
+						)
+					);
+					?>
+				</div><!-- .social-menu -->       
+				<?php endif; ?>
+			</div>
+
+		</div><!-- .site-banner -->
+		<a id="simple-menu" class="menu-button" href="#sidr">
+			<span class="icon"><span class="menu-text"><?php esc_html_e( 'Menu', 'masonry' ); ?></span><span>
+		</a>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'primary',
+				)
+			);
+			?>
+
+			<?php get_sidebar(); ?>
+		</nav><!-- #site-navigation -->
+		<div class="header-overlay"></div><!-- .header-overlay -->
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
